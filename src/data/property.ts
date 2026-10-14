@@ -89,7 +89,6 @@ export const property = {
   },
 
   condoFee: 800,
-  /** IPTU ainda não informado — atualize antes de publicar o site. */
   iptu: 1200,
   iptuPeriod: "ano" as const,
 
@@ -136,6 +135,20 @@ export const property = {
       name: "Fogão de indução",
       description: "Na varanda gourmet",
       icon: "induction",
+      status: "incluido",
+      confirmed: true,
+    },
+    {
+      id: "i5",
+      name: "Cortinas e persianas",
+      icon: "curtain",
+      status: "incluido",
+      confirmed: true,
+    },
+    {
+      id: "i6",
+      name: "Ar-condicionado",
+      icon: "ac",
       status: "incluido",
       confirmed: true,
     },

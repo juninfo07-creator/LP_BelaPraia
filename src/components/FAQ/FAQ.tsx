@@ -12,7 +12,7 @@ export default function FAQ() {
   };
 
   return (
-    <section id="faq" aria-labelledby="faq-heading" className="scroll-mt-20 bg-surface py-20 sm:py-28">
+    <section id="faq" aria-labelledby="faq-heading" className="scroll-mt-20 bg-white py-20 sm:py-28">
       <div className="mx-auto max-w-[880px] px-5 sm:px-8">
         <div className="animate-fade-up text-center">
           <SectionLabel>Dúvidas frequentes</SectionLabel>
@@ -77,7 +77,7 @@ export default function FAQ() {
           })}
         </div>
 
-        <div className="animate-fade-up mt-12 flex flex-col items-center gap-3 rounded-2xl border border-black/5 bg-white px-6 py-10 text-center sm:mt-16 sm:px-10">
+        <div className="animate-fade-up mt-12 flex flex-col items-center gap-3 rounded-2xl border border-black/5 bg-surface px-6 py-10 text-center sm:mt-16 sm:px-10">
           <span className="flex h-12 w-12 items-center justify-center rounded-full bg-beige">
             <MessageCircle size={20} className="text-gold-dark" strokeWidth={1.75} />
           </span>
