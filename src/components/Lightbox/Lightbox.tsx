@@ -10,8 +10,7 @@ interface LightboxProps {
 const availableRooms = Array.from(new Set(galleryPhotos.map((p) => p.room))) as Room[];
 
 export default function Lightbox({ initialPhotoId, onClose }: LightboxProps) {
-  const initialPhoto = galleryPhotos.find((p) => p.id === initialPhotoId) ?? galleryPhotos[0];
-  const [room, setRoom] = useState<Room | "todos">(initialPhoto.room);
+  const [room, setRoom] = useState<Room | "todos">("todos");
 
   const filtered: GalleryPhoto[] = useMemo(
     () => (room === "todos" ? galleryPhotos : galleryPhotos.filter((p) => p.room === room)),

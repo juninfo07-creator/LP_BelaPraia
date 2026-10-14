@@ -1,10 +1,10 @@
 import { CalendarCheck, HelpCircle, UserCheck } from "lucide-react";
 import WhatsAppButton from "../ui/WhatsAppButton";
 
-const CTA_IMAGE = "/images/varanda-mesa-cidade.jpg";
+const CTA_IMAGE = "/images/sala-janela-tv.png";
 
 const benefits = [
-  { icon: UserCheck, text: "Contato direto com o proprietário" },
+  { icon: UserCheck, text: "Contato direto com o corretor" },
   { icon: HelpCircle, text: "Tire suas dúvidas" },
   { icon: CalendarCheck, text: "Agende uma visita" },
 ];

@@ -2,8 +2,7 @@
  * CONFIGURAÇÃO CENTRAL DO IMÓVEL
  * -------------------------------
  * Edite este arquivo para personalizar todos os textos, valores e links do site.
- * Todos os dados abaixo são DEMONSTRATIVOS e devem ser conferidos/substituídos
- * pelos dados reais do imóvel antes da publicação.
+ * Campos marcados com "A CONFIRMAR" ainda precisam da informação real do proprietário.
  */
 
 export type IncludedItemStatus = "incluido" | "nao_incluido" | "negociavel";
@@ -44,111 +43,105 @@ export interface Amenity {
 }
 
 export const whatsapp = {
-  /** Número no formato internacional, somente dígitos. Ex: "5562999998888". Deixe vazio para ocultar o contato real. */
-  number: "",
+  /** Número no formato internacional, somente dígitos. Ex: "5561999998888". Deixe vazio para ocultar o contato real. */
+  number: "556133783039",
   messages: {
-    default: "Olá! Vi o site do apartamento e gostaria de receber mais informações.",
-    visit: "Olá! Gostaria de agendar uma visita ao apartamento.",
-    doubts: "Olá! Tenho interesse no apartamento e gostaria de tirar algumas dúvidas.",
-    faq: "Olá! Estou visitando o site do apartamento e gostaria de tirar algumas dúvidas.",
+    default: "Olá! Vi o site do apartamento no Residencial Bela Praia e gostaria de receber mais informações.",
+    visit: "Olá! Gostaria de agendar uma visita ao apartamento no Residencial Bela Praia.",
+    doubts: "Olá! Tenho interesse no apartamento do Residencial Bela Praia e gostaria de tirar algumas dúvidas.",
+    faq: "Olá! Estou visitando o site do apartamento no Residencial Bela Praia e gostaria de tirar algumas dúvidas.",
   },
 };
 
 export const property = {
-  developmentName: "Residencial My Life Style",
+  developmentName: "Residencial Bela Praia",
 
   seo: {
-    title: "Residencial My Life Style | Apartamento à venda em Águas Claras, Brasília",
+    title: "Residencial Bela Praia | Apartamento à venda em Samambaia Sul, Brasília",
     description:
-      "Apartamento de 62m², 2 quartos (1 suíte) e 1 vaga, em Águas Claras - DF, a poucos passos da Estação de Metrô Águas Claras.",
+      "Apartamento de 33m², 1 quarto, pronto para morar e com móveis planejados, no Residencial Bela Praia em Samambaia Sul - DF.",
   },
 
   hero: {
     label: "APARTAMENTO À VENDA",
-    title: "Conforto, praticidade e qualidade de vida em um só lugar.",
-    neighborhood: "Águas Claras",
+    title: "Seu novo lar em Samambaia com móveis planejados e localização privilegiada",
+    neighborhood: "Samambaia Sul",
     city: "Brasília",
     state: "DF",
   },
 
-  price: 680000,
+  price: 265000,
 
   /** Status comercial exibido na ficha técnica. Ex: "Pronto para morar", "Em construção", "Disponível para visitas" */
   status: "Pronto para morar",
 
   details: {
-    area: 62.02,
-    bedrooms: 2,
+    area: 33,
+    bedrooms: 1,
     suites: 1,
-    bathrooms: 2,
+    bathrooms: 1,
     parkingSpots: 1,
-    floor: 13,
-    floorView: "Vista livre",
-    sunPosition: "Perpendicular",
-    elevators: "4 elevadores",
+    floor: 2,
+    floorView: "",
+    sunPosition: "Nascente",
+    elevators: "Sim",
   },
 
-  condoFee: 800,
-  iptu: 1200,
+  condoFee: 0, // valor não informado - oculto na ficha técnica
+  iptu: 0, // valor não informado - oculto na ficha técnica
   iptuPeriod: "ano" as const,
 
   about: {
     label: "SOBRE O APARTAMENTO",
-    title: "Um espaço pensado para a sua família viver grandes momentos.",
+    title: "Um apartamento moderno, bem cuidado e pronto para morar.",
     description:
-      "Apartamento de 2 quartos (sendo 1 suíte) com sala em 2 ambientes, cozinha e varanda gourmet, todos com armários planejados. Localizado no 13º andar, com vista livre e posição perpendicular ao sol, em condomínio construído em 2015 a poucos passos da Estação de Metrô Águas Claras.",
+      "Apartamento de 1 suíte, posição nascente, no 2º andar, com vaga de garagem coberta. Piso em porcelanato acetinado classe A premium e paredes em porcelanato. Teto rebaixado em gesso, com cortineiros e iluminação em LED. Cozinha planejada em madeira premium, com bancada em mármore preto escovado, adega com cristaleira iluminada em LED, torre para forno e micro-ondas, espaço para embutir a geladeira, rack com painel ripado e mesa para 4 lugares. Banheiro com acabamento em mármore Mont Blanc e porcelanato classe A acetinado. Quarto com guarda-roupa embutido e cabeceira planejada. Pronto para morar, no Residencial Bela Praia, em Samambaia Sul.",
   },
 
   differentials: [
-    { id: "d1", icon: "gem", text: "Apartamento completo e moderno" },
-    { id: "d2", icon: "map-pin", text: "Localização privilegiada" },
-    { id: "d3", icon: "shield", text: "Condomínio com lazer completo" },
-    { id: "d4", icon: "sofa", text: "Móveis planejados e acabamentos de alto padrão" },
-    { id: "d5", icon: "file-check", text: "Pronto para morar ou investir" },
+    { id: "d1", icon: "gem", text: "Pronto para morar, com móveis planejados" },
+    { id: "d2", icon: "map-pin", text: "Localização privilegiada em Samambaia" },
+    { id: "d3", icon: "shield", text: "Condomínio com área de lazer completa" },
+    { id: "d4", icon: "sofa", text: "Acabamento moderno e iluminação em LED" },
+    { id: "d5", icon: "file-check", text: "Aceita financiamento bancário" },
   ],
 
   includedItems: [
     {
       id: "i1",
-      name: "Armários planejados",
-      description: "Cozinha, os 2 quartos e varanda gourmet",
+      name: "Guarda-roupa embutido",
+      description: "Com cabeceira, no quarto",
       icon: "wardrobe",
       status: "incluido",
       confirmed: true,
     },
     {
       id: "i2",
-      name: "Fogão embutido",
-      icon: "stove",
+      name: "Armários planejados",
+      description: "Madeira premium, com bancada em mármore preto escovado",
+      icon: "wardrobe",
       status: "incluido",
       confirmed: true,
     },
     {
       id: "i3",
-      name: "Forno embutido",
-      icon: "oven",
+      name: "Cooktop",
+      icon: "cooktop",
       status: "incluido",
       confirmed: true,
     },
     {
       id: "i4",
-      name: "Fogão de indução",
-      description: "Na varanda gourmet",
-      icon: "induction",
+      name: "Mesa para 4 lugares",
+      icon: "table",
       status: "incluido",
       confirmed: true,
     },
     {
       id: "i5",
-      name: "Cortinas e persianas",
-      icon: "curtain",
-      status: "incluido",
-      confirmed: true,
-    },
-    {
-      id: "i6",
-      name: "Ar-condicionado",
-      icon: "ac",
+      name: "Iluminação em LED",
+      description: "Teto rebaixado em gesso com cortineiros",
+      icon: "light",
       status: "incluido",
       confirmed: true,
     },
@@ -156,63 +149,30 @@ export const property = {
 
   condominium: {
     label: "CONDOMÍNIO",
-    title: "Lazer completo para toda a família.",
+    title: "Área de lazer completa e muita praticidade no dia a dia.",
     description:
-      "Condomínio construído em 2015, com 4 elevadores, portaria 24h e uma estrutura completa de lazer e serviços para o dia a dia.",
+      "Residencial com piscina, salão de festas, churrasqueira e lojas no próprio condomínio, em uma região de fácil acesso a comércio e serviços — lotérica, Na Hora e muito mais nas proximidades.",
   },
 
   amenities: [
-    {
-      id: "a1",
-      name: "Piscina",
-      icon: "pool",
-      image: "/images/amenity-piscina.jpg",
-      confirmed: true,
-    },
-    {
-      id: "a2",
-      name: "Academia",
-      icon: "gym",
-      image: "/images/amenity-academia.jpg",
-      confirmed: true,
-    },
-    {
-      id: "a3",
-      name: "Salão de festas",
-      icon: "party",
-      image: "/images/amenity-salao.jpg",
-      confirmed: true,
-    },
-    {
-      id: "a4",
-      name: "Espaço gourmet",
-      icon: "gourmet",
-      image: "/images/amenity-gourmet.jpg",
-      confirmed: true,
-    },
-    { id: "a5", name: "Portaria 24h", icon: "concierge", confirmed: true },
-    { id: "a6", name: "Sauna", icon: "sauna", confirmed: true },
-    { id: "a7", name: "Churrasqueiras", icon: "bbq", confirmed: true },
-    { id: "a8", name: "Coworking", icon: "coworking", confirmed: true },
-    { id: "a9", name: "Espaço de beleza", icon: "beauty", confirmed: true },
-    { id: "a10", name: "Sala de jogos", icon: "games", confirmed: true },
-    { id: "a11", name: "Lavanderia", icon: "laundry", confirmed: true },
-    { id: "a12", name: "Mini mercado", icon: "market", confirmed: true },
-    { id: "a13", name: "Gás encanado", icon: "gas", confirmed: true },
-  ] satisfies Amenity[],
+    { id: "a1", name: "Piscina", icon: "pool", confirmed: true },
+    { id: "a2", name: "Salão de festas", icon: "party", confirmed: true },
+    { id: "a3", name: "Churrasqueira", icon: "bbq", confirmed: true },
+    { id: "a4", name: "Lojas no residencial", icon: "market", confirmed: true },
+  ] as Amenity[],
 
   location: {
     label: "LOCALIZAÇÃO",
-    title: "A poucos passos do metrô, em Águas Claras.",
+    title: "Localização privilegiada em Samambaia Sul.",
     description:
-      "Próximo à Estação de Metrô Águas Claras, em uma das regiões mais valorizadas do Distrito Federal.",
+      "Região com muita praticidade no dia a dia: lojas no próprio residencial, academia, lotérica, Na Hora e fácil acesso a comércio e serviços.",
     /** Endereço resumido exibido no site. Deixe vazio para ocultar. */
-    addressLabel: "R. 25 Norte, 14 - Águas Claras, Brasília - DF",
+    addressLabel: "Praia Bela Residence & Mall, Samambaia Sul - Brasília - DF",
     /** URL completa do Google Maps (botão "Ver no Google Maps"). Deixe vazio para ocultar o mapa/botão até o endereço real ser confirmado. */
     googleMapsUrl:
-      "https://www.google.com/maps/place/Residencial+My+Life+Style/@-15.839432,-48.0298075,1055m/data=!3m2!1e3!4b1!4m6!3m5!1s0x935a326f6bc4f92b:0x55ea18cdfc75b8ca!8m2!3d-15.839432!4d-48.0298075!16s%2Fg%2F11b866mrc9?entry=ttu&g_ep=EgoyMDI2MTAwNy4wIKXMDSoASAFQAw%3D%3D",
+      "https://www.google.com/maps/place/Praia+Bela+Residence+%26+Mall/@-15.8645622,-48.0583594,264m/data=!3m1!1e3!4m14!1m7!3m6!1s0x935a2d66e0f24f11:0x36f3d4d8f9a69c0c!2sPraia+Bela+Residence+%26+Mall!8m2!3d-15.8645898!4d-48.0574893!16s%2Fg%2F11f_kmyh3v!3m5!1s0x935a2d66e0f24f11:0x36f3d4d8f9a69c0c!8m2!3d-15.8645898!4d-48.0574893!16s%2Fg%2F11f_kmyh3v?entry=ttu&g_ep=EgoyMDI2MTAxMS4wIKXMDSoASAFQAw%3D%3D",
     /** Coordenadas usadas para incorporar o mapa (iframe). Deixe como null para ocultar o mapa incorporado. */
-    coordinates: { lat: -15.839432, lng: -48.0298075 },
+    coordinates: { lat: -15.8645898, lng: -48.0574893 } as { lat: number; lng: number } | null,
   },
 
   /** URL de vídeo (YouTube/Vimeo embed ou mp4 direto). Deixe vazio para ocultar o botão de vídeo. */
@@ -220,7 +180,7 @@ export const property = {
 
   footer: {
     disclaimer:
-      "Informações, valores e disponibilidade devem ser confirmados diretamente com o proprietário.",
+      "Informações, valores e disponibilidade devem ser confirmados diretamente com o corretor.",
   },
 };
 

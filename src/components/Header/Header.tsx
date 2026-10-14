@@ -1,4 +1,4 @@
-import { Building2, Menu, X } from "lucide-react";
+import { Menu, X } from "lucide-react";
 import { useEffect, useState } from "react";
 import { property } from "../../data/property";
 import WhatsAppButton from "../ui/WhatsAppButton";
@@ -52,7 +52,9 @@ export default function Header() {
           }}
           className="flex items-center gap-2.5 text-white"
         >
-          <Building2 size={22} className="text-gold" strokeWidth={1.75} />
+          <span className="flex h-9 shrink-0 items-center rounded-lg bg-white px-1.5">
+            <img src="/logo-santana-imoveis.png" alt="Santana Imóveis" className="h-6 w-auto" />
+          </span>
           <span className="flex flex-col leading-tight">
             <span className="text-[10px] uppercase tracking-[0.25em] text-beige/80">
               Residencial

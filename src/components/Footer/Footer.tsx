@@ -11,7 +11,16 @@ export default function Footer() {
     <footer className="bg-graphite pt-14 pb-8">
       <div className="mx-auto flex max-w-7xl flex-col gap-8 px-5 sm:px-8 md:flex-row md:items-center md:justify-between">
         <div>
-          <div className="flex items-center gap-2.5 text-white">
+          <div className="flex items-center gap-3">
+            <span className="flex h-10 shrink-0 items-center rounded-lg bg-white px-2">
+              <img src="/logo-santana-imoveis.png" alt="Santana Imóveis" className="h-7 w-auto" />
+            </span>
+            <div>
+              <p className="text-sm font-bold text-white">Santana Imóveis</p>
+              <p className="text-xs text-white/50">CRECI C.J. 28.032</p>
+            </div>
+          </div>
+          <div className="mt-4 flex items-center gap-2.5 text-white">
             <Building2 size={20} className="text-gold" strokeWidth={1.75} />
             <span className="text-base font-bold">{property.developmentName}</span>
           </div>

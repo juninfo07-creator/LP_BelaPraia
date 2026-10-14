@@ -4,7 +4,7 @@ import { areaFormatter, currencyFormatter, property } from "../../data/property"
 import VideoModal from "../VideoModal/VideoModal";
 import WhatsAppButton from "../ui/WhatsAppButton";
 
-const HERO_IMAGE = "/images/sala-jantar-cozinha.jpg";
+const HERO_IMAGE = "/images/sala-jantar-cozinha.png";
 
 const stats = [
   {
@@ -40,7 +40,7 @@ export default function Hero() {
     <section id="inicio" className="relative min-h-screen w-full overflow-hidden bg-graphite">
       <img
         src={HERO_IMAGE}
-        alt="Sala de jantar integrada à cozinha e à varanda, com luz natural"
+        alt="Sala integrada à cozinha, com luz natural"
         width={1448}
         height={1086}
         fetchPriority="high"

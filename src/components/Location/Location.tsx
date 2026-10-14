@@ -37,7 +37,7 @@ export default function Location() {
                 </span>
                 <p className="mt-2 text-sm font-semibold text-ink">{location.addressLabel}</p>
                 <p className="mt-1 text-xs text-muted">
-                  Mapa disponível em breve — endereço exato a confirmar com o proprietário.
+                  Mapa disponível em breve — endereço exato a confirmar com o corretor.
                 </p>
               </div>
             )}

@@ -83,7 +83,7 @@ export default function FAQ() {
           </span>
           <h3 className="text-xl font-extrabold text-ink">Ainda tem alguma dúvida?</h3>
           <p className="max-w-sm text-sm leading-relaxed text-muted sm:text-base">
-            Fale diretamente com o proprietário para receber mais informações sobre o apartamento.
+            Fale diretamente com o corretor para receber mais informações sobre o apartamento.
           </p>
           <WhatsAppButton messageKey="faq" variant="solid-green" className="mt-2 w-full sm:w-auto">
             Falar pelo WhatsApp

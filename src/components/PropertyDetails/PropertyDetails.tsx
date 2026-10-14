@@ -20,19 +20,35 @@ const technicalItems = [
   {
     icon: BedDouble,
     label: "Quartos e suítes",
-    value: `${d.bedrooms} quartos${d.suites ? ` (${d.suites} suíte)` : ""}`,
+    value: `${d.bedrooms} ${d.bedrooms === 1 ? "quarto" : "quartos"}${d.suites ? ` (${d.suites} suíte)` : ""}`,
   },
-  { icon: Bath, label: "Banheiros", value: `${d.bathrooms} banheiros` },
-  { icon: ParkingIcon, label: "Vagas de garagem", value: `${d.parkingSpots} vagas` },
-  { icon: Building2, label: "Andar e vista", value: `${d.floor}º andar · ${d.floorView}` },
+  {
+    icon: Bath,
+    label: "Banheiros",
+    value: `${d.bathrooms} ${d.bathrooms === 1 ? "banheiro" : "banheiros"}`,
+  },
+  {
+    icon: ParkingIcon,
+    label: "Vagas de garagem",
+    value: `${d.parkingSpots} ${d.parkingSpots === 1 ? "vaga" : "vagas"}`,
+  },
+  {
+    icon: Building2,
+    label: d.floorView ? "Andar e vista" : "Andar",
+    value: d.floorView ? `${d.floor}º andar · ${d.floorView}` : `${d.floor}º andar`,
+  },
   { icon: Sun, label: "Posição solar", value: d.sunPosition },
-  { icon: MoveVertical, label: "Elevadores", value: d.elevators },
+  { icon: MoveVertical, label: d.elevators, value: "Elevadores" },
 ];
 
 const summaryItems = [
   { icon: Coins, label: "Valor", value: currencyFormatter.format(property.price) },
-  { icon: Receipt, label: "Condomínio", value: `${currencyFormatter.format(property.condoFee)}/mês` },
-  { icon: FileText, label: "IPTU", value: `${currencyFormatter.format(property.iptu)}/${property.iptuPeriod}` },
+  ...(property.condoFee > 0
+    ? [{ icon: Receipt, label: "Condomínio", value: `${currencyFormatter.format(property.condoFee)}/mês` }]
+    : []),
+  ...(property.iptu > 0
+    ? [{ icon: FileText, label: "IPTU", value: `${currencyFormatter.format(property.iptu)}/${property.iptuPeriod}` }]
+    : []),
   { icon: CheckCircle2, label: "Status", value: property.status },
 ];
 
@@ -69,7 +85,7 @@ export default function PropertyDetails() {
         </div>
 
         <p className="mt-10 text-xs text-white/40">
-          Dados demonstrativos. Valores e informações devem ser confirmados com o proprietário.
+          Dados demonstrativos. Valores e informações devem ser confirmados com o corretor.
         </p>
       </div>
     </section>
