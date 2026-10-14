@@ -1,6 +1,7 @@
 import { MessageCircle } from "lucide-react";
 import type { ReactNode } from "react";
 import { getWhatsappUrl, isWhatsappConfigured, type WhatsappMessageKey } from "../../utils/whatsapp";
+import { trackPixelEvent } from "../../utils/pixel";
 
 interface WhatsAppButtonProps {
   messageKey?: WhatsappMessageKey;
@@ -48,6 +49,7 @@ export default function WhatsAppButton({
       href={url!}
       target="_blank"
       rel="noopener noreferrer"
+      onClick={() => trackPixelEvent("Contact")}
       className={`${baseClasses} ${variantClasses[variant]} ${className}`}
     >
       {icon ?? <MessageCircle size={18} />}
