@@ -1,6 +1,6 @@
 import { Car, Home, LayoutGrid, MapPin, Play } from "lucide-react";
 import { useState } from "react";
-import { currencyFormatter, property } from "../../data/property";
+import { areaFormatter, currencyFormatter, property } from "../../data/property";
 import VideoModal from "../VideoModal/VideoModal";
 import WhatsAppButton from "../ui/WhatsAppButton";
 
@@ -10,7 +10,7 @@ const stats = [
   {
     icon: Home,
     label: "Área privativa",
-    value: `${property.details.area} m²`,
+    value: `${areaFormatter.format(property.details.area)} m²`,
   },
   {
     icon: LayoutGrid,

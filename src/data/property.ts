@@ -76,7 +76,7 @@ export const property = {
   status: "Pronto para morar",
 
   details: {
-    area: 62,
+    area: 62.02,
     bedrooms: 2,
     suites: 1,
     bathrooms: 2,
@@ -96,7 +96,7 @@ export const property = {
     label: "SOBRE O APARTAMENTO",
     title: "Um espaço pensado para a sua família viver grandes momentos.",
     description:
-      "Apartamento de 2 quartos (sendo 1 suíte) com sala em 2 ambientes, cozinha e varanda gourmet, todos com armários planejados. Localizado no 13º andar, com vista livre e posição perpendicular ao sol, em condomínio construído em 2020 a poucos passos da Estação de Metrô Águas Claras.",
+      "Apartamento de 2 quartos (sendo 1 suíte) com sala em 2 ambientes, cozinha e varanda gourmet, todos com armários planejados. Localizado no 13º andar, com vista livre e posição perpendicular ao sol, em condomínio construído em 2015 a poucos passos da Estação de Metrô Águas Claras.",
   },
 
   differentials: [
@@ -144,7 +144,7 @@ export const property = {
     label: "CONDOMÍNIO",
     title: "Lazer completo para toda a família.",
     description:
-      "Condomínio construído em 2020, com 4 elevadores, portaria 24h e uma estrutura completa de lazer e serviços para o dia a dia.",
+      "Condomínio construído em 2015, com 4 elevadores, portaria 24h e uma estrutura completa de lazer e serviços para o dia a dia.",
   },
 
   amenities: [
@@ -214,4 +214,9 @@ export const currencyFormatter = new Intl.NumberFormat("pt-BR", {
   style: "currency",
   currency: "BRL",
   maximumFractionDigits: 0,
+});
+
+export const areaFormatter = new Intl.NumberFormat("pt-BR", {
+  minimumFractionDigits: 0,
+  maximumFractionDigits: 2,
 });

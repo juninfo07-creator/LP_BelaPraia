@@ -11,12 +11,12 @@ import {
   Receipt,
   Sun,
 } from "lucide-react";
-import { currencyFormatter, property } from "../../data/property";
+import { areaFormatter, currencyFormatter, property } from "../../data/property";
 
 const d = property.details;
 
 const technicalItems = [
-  { icon: Home, label: "Área privativa", value: `${d.area} m²` },
+  { icon: Home, label: "Área privativa", value: `${areaFormatter.format(d.area)} m²` },
   {
     icon: BedDouble,
     label: "Quartos e suítes",
