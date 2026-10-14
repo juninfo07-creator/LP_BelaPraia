@@ -41,10 +41,10 @@ export default function Hero() {
       <img
         src={HERO_IMAGE}
         alt="Sala de jantar integrada à cozinha e à varanda, com luz natural"
-        width={900}
-        height={1600}
+        width={1448}
+        height={1086}
         fetchPriority="high"
-        className="absolute inset-0 h-full w-full object-cover object-[center_30%]"
+        className="absolute inset-0 h-full w-full object-cover"
       />
       <div className="absolute inset-0 bg-gradient-to-r from-graphite/95 via-graphite/60 to-graphite/20" />
       <div className="absolute inset-0 bg-gradient-to-t from-graphite/80 via-transparent to-transparent" />

@@ -1,7 +1,7 @@
 import { CalendarCheck, HelpCircle, UserCheck } from "lucide-react";
 import WhatsAppButton from "../ui/WhatsAppButton";
 
-const CTA_IMAGE = "/images/varanda-vista-cidade.jpg";
+const CTA_IMAGE = "/images/varanda-mesa-cidade.jpg";
 
 const benefits = [
   { icon: UserCheck, text: "Contato direto com o proprietário" },
@@ -17,7 +17,7 @@ export default function ContactCTA() {
         alt=""
         aria-hidden="true"
         loading="lazy"
-        className="absolute inset-0 h-full w-full object-cover object-[center_25%]"
+        className="absolute inset-0 h-full w-full object-cover"
       />
       <div className="absolute inset-0 bg-graphite/85" />
 
