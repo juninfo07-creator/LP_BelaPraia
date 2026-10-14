@@ -5,10 +5,12 @@
   --color-graphite-light: #263831;
   --color-gold: #d8a768;
   --color-gold-light: #e8c290;
+  --color-gold-dark: #a87336;
   --color-beige: #f1d2a7;
   --color-surface: #f8f7f4;
   --color-ink: #17211f;
   --color-muted: #666666;
+  --color-divider: #dedad2;
 
   --font-sans: "Manrope", "Inter", ui-sans-serif, system-ui, sans-serif;
 

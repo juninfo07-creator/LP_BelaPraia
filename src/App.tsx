@@ -3,6 +3,7 @@ import AboutGallery from "./components/AboutGallery/AboutGallery";
 import Condominium from "./components/Condominium/Condominium";
 import ContactCTA from "./components/ContactCTA/ContactCTA";
 import Differentials from "./components/Differentials/Differentials";
+import FAQ from "./components/FAQ/FAQ";
 import Footer from "./components/Footer/Footer";
 import Header from "./components/Header/Header";
 import Hero from "./components/Hero/Hero";
@@ -44,6 +45,8 @@ function App() {
             </div>
           </div>
         </section>
+
+        <FAQ />
 
         <ContactCTA />
       </main>

@@ -50,6 +50,7 @@ export const whatsapp = {
     default: "Olá! Vi o site do apartamento e gostaria de receber mais informações.",
     visit: "Olá! Gostaria de agendar uma visita ao apartamento.",
     doubts: "Olá! Tenho interesse no apartamento e gostaria de tirar algumas dúvidas.",
+    faq: "Olá! Estou visitando o site do apartamento e gostaria de tirar algumas dúvidas.",
   },
 };
 
